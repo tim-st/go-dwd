@@ -12,6 +12,8 @@ Inofficial client for downloading weather data from [DWD](https://opendata.dwd.d
 
 The compiled binary `go-dwd` will be located at `$GOPATH\bin\`
 
+or download a binary [here](https://github.com/tim-st/go-dwd/releases).
+
 ## Usage
 
 >go-dwd -help
