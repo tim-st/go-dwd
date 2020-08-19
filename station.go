@@ -65,7 +65,7 @@ func sortStationsByStringDistance(s stationlist, search string) {
 
 		if ci1 && cj1 {
 
-			di := 2 << 31
+			di := int(^uint(0) >> 1)
 			dj := di
 
 			for _, segment := range uniseg.Segments([]byte(siNameLower)) {
@@ -106,7 +106,7 @@ func sortStationsByStringDistance(s stationlist, search string) {
 		}
 
 		if ci2 && cj2 {
-			di := 2 << 31
+			di := int(^uint(0) >> 1)
 			dj := di
 
 			for _, segment := range uniseg.Segments([]byte(siStateLower)) {
@@ -134,7 +134,7 @@ func sortStationsByStringDistance(s stationlist, search string) {
 			return di < dj
 		}
 
-		di := 2 << 31
+		di := int(^uint(0) >> 1)
 		dj := di
 
 		for _, segment := range uniseg.Segments([]byte(siNameLower)) {
